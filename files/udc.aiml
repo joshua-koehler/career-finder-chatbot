@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Please enter "Begin" to find your computer science career.</template>
+  </category>
+
+  <category>
+    <pattern>BEGIN</pattern>
+    <template>OK, let's get started.<br/><br/> Please choose your preference:
+      <reply>
+        <text>Art</text>
+        <postback>art</postback>
+      </reply>
+      <reply>
+        <text>Math</text>
+        <postback>math</postback>
+      </reply>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>ART</pattern>
+    <template>What are you best at?
+      <reply>
+        <text>Understanding people.</text>
+        <postback>ux</postback>
+      </reply>
+      <reply>
+        <text>Making things look nice.</text>
+        <postback>ui</postback>
+      </reply>
+    </template>
+  </category>
+
+<category>
+    <pattern>MATH</pattern>
+    <template>What interests you most?
+      <reply>
+        <text>Programming spaceships.</text>
+        <postback>embedded</postback>
+      </reply>
+      <reply>
+        <text>How robots think.</text>
+        <postback>ai</postback>
+      </reply>
+      <reply>
+        <text>Building the next Google.</text>
+        <postback>software engineer</postback>
+      </reply>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ux</pattern>
+    <template>You should consider being a UX (user-experience) designer.<br/><br/>
+    UX designers understand how people interact with software to create systems that are enjoyable and easy to use.
+    </template>
+  </category>
+
+  <category>
+    <pattern>ui</pattern>
+    <template>You should consider being a UI (user interface) designer.<br/><br/>
+    UI designers focus on building a beautiful and elegant front-end (the part users see) of an application.
+    </template>
+  </category>
+
+  <category>
+    <pattern>embedded</pattern>
+    <template>You should consider being an embedded systems engineer.<br/><br/>
+    Embedded systems engineers work closely with hardware to design software systems that interact physically with the real world. Examples of these systems would be robots, wearable tech (i.e. smart watches), and airplane auto-pilot systems.
+    </template>
+  </category>
+
+  <category>
+    <pattern>ai</pattern>
+    <template>You should consider working in the artificial intelligence (AI) field.<br/><br/>
+    AI engineers build systems that "learn", such as Siri, large data prediction software, and chat bots.
+    </template>
+  </category>
+
+ <category>
+    <pattern>software engineer</pattern>
+    <template>You should consider working as a software engineer.<br/><br/>
+    Software engineering is a broad category of computer science that build all kinds of applications, from websites, to database systems, to mobile apps.
+    </template>
+  </category>
+</aiml>
